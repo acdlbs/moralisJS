@@ -22,6 +22,15 @@ async function logOut() {
   console.log("logged out");
 }
 
+async function getNFTs() {
+    let nft = await Moralis.Web3API.account.getNFTs({address: "0x495f947276749ce646f68ac8c248420045cb7b5e"})
+    let str = JSON.stringify(nft, null, 2);
+    document.getElementById("foo").innerHTML = str;
+    
+}
+
+
+document.getElementById("getNFTs").onclick = getNFTs;
 document.getElementById("btn-login").onclick = login;
 document.getElementById("btn-logout").onclick = logOut;
 

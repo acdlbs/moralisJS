@@ -1,4 +1,7 @@
 # Simple javascript moralis boilerplate project
+# Notes
+- Looks as if GetNFTTrades currently only works on the opensea marketplace
+  - https://github.com/nft-api/nft-api#getnfttrades
 # To run
 ```
 git clone https://github.com/acdlbs/moralisJS.git
